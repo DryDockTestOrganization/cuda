@@ -12,9 +12,8 @@ FROM base as base-arm64
 ENV NVARCH sbsa
 ENV NVIDIA_REQUIRE_CUDA "cuda>=11.4"
 ENV NV_CUDA_CUDART_VERSION 11.4.108-1
-FROM base-${TARGETARCH}
 
-ARG TARGETARCH
+FROM base-x86_64
 
 LABEL maintainer "NVIDIA CORPORATION <cudatools@nvidia.com>"
 
