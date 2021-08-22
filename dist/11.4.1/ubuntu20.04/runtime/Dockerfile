@@ -17,8 +17,6 @@ ENV NV_LIBNCCL_PACKAGE ${NV_LIBNCCL_PACKAGE_NAME}=${NV_LIBNCCL_PACKAGE_VERSION}+
 
 LABEL maintainer "NVIDIA CORPORATION <cudatools@nvidia.com>"
 
-RUN echo "bar"
-
 RUN apt-get update && apt-get install -y --no-install-recommends \
     cuda-libraries-11-4=${NV_CUDA_LIB_VERSION} \
     libnpp-11-4=${NV_LIBNPP_VERSION} \
