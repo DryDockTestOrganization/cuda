@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM quay.io/moose_consulting/ubuntu:20.04
 
 ENV NVARCH x86_64
 ENV NVIDIA_REQUIRE_CUDA "cuda>=11.4 brand=tesla,driver>=418,driver<419 brand=tesla,driver>=440,driver<441 driver>=450"
